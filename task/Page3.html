@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="menu.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/Script.js"></script>
+  
+</head>
+<body>
+    <div class="text">Simple jQuery Slide Nav</div>
+    <div class="menu-tab">
+        <div id="one"></div>
+        <div id="two"></div>
+        <div id="three"></div>
+    </div>
+    <div class="menu-hide"> 
+        <nav>
+            <ul>
+                <li><a href="Page1.html">Home</a></li>
+                <li><a href="Page2.html">About</a></li>
+                <li><a href="Page3.html">menu</a></li>
+                <li id="down">
+                    <a href="#" onclick="toggleSubMenu(event)">Link Four</a>
+                    <ul>
+                        <li><a href="#">Link One</a></li>
+                        <li><a href="#">Link Two</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
+<script>
+    $(document).ready(function() {
+        $('.menu-tab').click(function() {
+            $('.menu-tab').toggleClass('active');
+            $('.menu-hide').toggleClass('show');
+
+
+     });
+     $('.menu-hide').click(function() {
+        $('.menu-tab').removeClass('active');
+            $('.menu-hide').removeClass('show');
+});
+});
+
+    function toggleSubMenu(event) {
+      // Prevent the default link behavior
+      event.preventDefault();
+
+      // Get the submenu associated with the link
+      var submenu = document.getElementById('down').querySelector('ul');
+
+      // Toggle the display property
+      submenu.style.display = (submenu.style.display === 'block') ? 'none' : 'block';
+    }
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="stylesheet.css">
+    <script src="js/jquery-3.5.1.js"></script>
+    <script src="js/Script.js"></script>
+   
+
+</head>
+<style>
+    .image-container {
+      position: relative;
+      width: 300px; /* Adjust the width as needed */
+      height: 200px; /* Adjust the height as needed */
+      overflow: hidden;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .hover-image {
+      position: absolute;
+      top: 0;
+      left: 0;
+      opacity: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.3s ease-in-out;
+    }
+
+    .image-container:hover .hover-image {
+      opacity: 1;
+    }
+  </style>
+<body>
+    <div class="container">
+
+        <div class="sidenav">
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#clients">Clients</a>
+            <a href="#contact">Contact</a>
+            <button class="dropdown-btn">
+                Dropdown
+                <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-container">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
+            </div>
+            <a href="#contact">Search</a>
+        </div>
+
+
+
+        <div class="main">
+
+
+            <div class="navbar">
+                <a href="Page1.html">Home</a>
+                <a href="Page2.html">About</a>
+                <a href="Page3.html">Menu</a>
+                <div class="subnav">
+                    <button class="subnavbtn">Services <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#bring">Bring</a>
+                        <a href="#deliver">Deliver</a>
+                        <a href="#package">Package</a>
+                        <a href="#express">Express</a>
+                    </div>
+                </div>
+                <div class="subnav">
+                    <button class="subnavbtn">Partners <i class="fa fa-caret-down"></i></button>
+                    <div class="subnav-content">
+                        <a href="#link1">Link 1</a>
+                        <a href="#link2">Link 2</a>
+                        <a href="#link3">Link 3</a>
+                        <a href="#link4">Link 4</a>
+                    </div>
+                </div>
+                <a href="#contact">Contact</a>
+
+              
+            </div>
+
+
+
+
+<div class="col">
+    <div class="val">
+        <div class="box">
+  <div class="image-container">
+    <img src="../images/slider1.jpg" alt="First Image">
+    <img class="hover-image" src="../images/slider4.jpg" alt="Second Image">
+  </div>            <br>
+            <p> The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.</p>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="../images/slider2.jpg" alt="First Image">
+                <img class="hover-image" src="../images/slider5.jpg" alt="Second Image">
+              </div>                <br>
+            <p> The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.</p>
+        </div>
+        <div class="box">
+            <div class="image-container">
+                <img src="../images/slider3.jpg" alt="First Image">
+                <img class="hover-image" src="../images/slider6.jpg" alt="Second Image">
+              </div>                <br>
+            <p> The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.
+                The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+                the rain, and the burning sun. It is the place we go to for rest after the fatigue and hardship of work.</p>
+        </div>
+
+    </div>
+</div>
+ 
+
+
+
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div id="logo">
+                <a href="HomePage.html">
+                    <img src="../images/logo.png" alt="site logo">
+                    <h1> Welcome to Home website</h1>
+                </a>
+            </div>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home">Page1</a></li>
+
+                <li><a href="Page2.html">Page2</a></li>
+                <li><a href="Page3.html">Page3</a></li>
+            </ul>
+        </nav>
+
+          <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+          <style>
+            #graph {
+                font-size: 16px;
+    color: black;
+    margin-left: 20px;
+    position: absolute;
+    top: 430px;
+            }
+        
+            .color-button, .size-button {
+                
+              margin: 5px;
+              padding: 6px;
+              cursor: pointer;
+            }
+            button {
+    background-color: white;
+    color: black;
+    padding: 16px 28px;
+    margin: 7px 25px;
+    border: none;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    
+}
+          </style>
+
+
+        <main class="body">
+        
+          <div id="graph">
+            The house is the residence and the place in which we live. It is the refuge from the deadly cold,
+             the rain, and the burning sun. <br> It is the place we go to for rest after the fatigue and hardship of work.
+             The house must be organized and cleaned to suit humanity <br> and health protection. This is the duty of the wife.
+              If the wife is organized, she will find the house organized, but if she is disorganized, <br> she will find it organized. 
+              The house is not clean and untidy, <br> so we make sure to keep our house clean to avoid diseases and bacteria. 
+              The sun must enter it to kill the bacteria in the house. <br> Because of the importance of the house,
+               we would like to present to you today’s topic about the house and present to you a <br>
+                collection of beautiful and expressive sayings and phrases about the house and also pictures with words  <br>
+                written about the house suitable for use on it.<br>  Social networking sites such as Facebook, Twitter, Instagram, 
+                and WhatsApp to share with friends
+          </div>
+        
+            <!-- Color buttons -->
+            <div class="color-button">
+            <button  onclick="changeFontColor('green')">Font Color Green</button>
+            <button  onclick="changeFontColor('red')">Font Color Red</button>
+            <button  onclick="changeFontColor('rgb(99, 38, 222)')"> Font Color banafseg </button>
+        
+        </div>
+
+            <!-- Size buttons -->
+            <div class="size-button">
+            <button  onclick="changeFontSize('smaller')"> Font Size Smaller</button>
+            <button  onclick="changeFontSize('larger')"> Font Size  Larger</button>
+            <button  onclick="changeFontSize('very-large')"> Font Size  Very Large</button>
+          </div>
+        
+      
+          <script>
+            function changeFontColor(color) {
+              $('#graph').css('color', color);
+            }
+        
+            function changeFontSize(size) {
+              var currentSize = parseInt($('#graph').css('font-size'));
+        
+              switch (size) {
+                case 'smaller':
+                  $('#graph').css('font-size', currentSize - 2 + 'px');
+                  break;
+                case 'larger':
+                  $('#graph').css('font-size', currentSize + 2 + 'px');
+                  break;
+                case 'very-large':
+                  $('#graph').css('font-size', currentSize + 5 + 'px');
+                  break;
+                default:
+                  break;
+              }
+            }
+          </script>
+          </main>
+</body>
+</html>
